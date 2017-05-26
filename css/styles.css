@@ -2,7 +2,8 @@
 html, body {
    height: 100%;
    font-family:verdana,arial,sans-serif;
-   color:#555555;
+   /*color:#555555;*/
+   background-color: #eeeff4;
 }
 
 .nav {
@@ -283,15 +284,6 @@ small.text-muted {
   /*align-items: stretch;*/
 }
 
-/*
-.fourth-col-feed {
-  height: 50%;
-}
-
-.users-list {
-  height: 50%;
-}
-*/
 /*.mini-box {
     background-color: #10BCFF;
     color: white;
@@ -311,9 +303,19 @@ small.text-muted {
   /*flex: 1;*/
 }
 
+.first-col {
+  margin-left: 5%;
+  overflow-y: hidden;  /*hide vertical*/
+}
+
+h6 {
+  margin-left: 5%;
+}
+
+
 .second-col {
   width: 40%;
   margin-left: 5px;
   margin-right: 5px;
-  /*flex: 2;*/
+  overflow-y: auto;
 }
