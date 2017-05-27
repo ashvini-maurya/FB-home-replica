@@ -304,6 +304,7 @@ h6 {
 
 .third-col {
   margin-right: 5px;
+  overflow-y: auto;
 }
 
 .fourth-col-feed {
