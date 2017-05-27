@@ -15,4 +15,25 @@ $('[data-toggle=offcanvas]').click(function() {
 });
 
 
+document.getElementById("second-col-id").addEventListener("scroll", function (event) {
+     var newDiv = document.createElement("div");
+        newDiv.innerHTML = "my awesome new div";
+        document.getElementById("second-col-id").appendChild(newDiv);
+});
+
+
+var checkForNewDiv = function () {
+    var lastDiv = document.querySelector(".second-col-id > div:last-child");
+    var maindiv = document.querySelector(".second-col-id");
+    var lastDivOffset = lastDiv.offsetTop + lastDiv.clientHeight;
+    var pageOffset = maindiv.offsetTop + maindiv.clientHeight;
+    if (pageOffset > lastDivOffset - 10) {
+        var newDiv = document.createElement("div");
+        newDiv.innerHTML = "my awesome new div";
+        document.getElementById("second-col-id").appendChild(newDiv);
+        checkForNewDiv();
+    }
+};
+
+checkForNewDiv();
 
